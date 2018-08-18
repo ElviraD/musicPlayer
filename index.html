@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>音乐播放器</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	<div id="playerPage">
+		<div>
+			<img src="images/arrow.png" alt="" width="32" height="32" id="returnArrow">
+		</div>
+		<div id="playPage">
+			<div id="imgBox">
+				<img id="imgUrl">
+			</div>
+			<div id="playProgress">
+				<span id="startTime">00:00</span>
+				<img src="images/round.png" alt="" id="playRound">
+				<span id="endTime">00:00</span><!-- 播放进度条 -->
+			</div>
+		</div>
+	</div><!-- playerPage -->
+	<div id="musicBox">
+		<audio id="Play" src="#"></audio>
+		<div class="slideImg">
+			<img src="images/1.jpg" width="300px" alt="封面">
+		</div>
+		<div class="relate">
+			<span>随机播放</span>
+			<span>管理</span>
+		</div>
+		<ul id="musicList">
+			<li>
+				一月，银装素裹<br>
+				<span class="author">紫竹笛韵</span>
+			</li>
+			<li>
+				二月，莺飞草长<br>
+				<span class="author">紫竹笛韵</span>
+			</li>
+			<li>
+				三月，桃沐春风<br>
+				<span class="author">紫竹笛韵</span>
+			</li>
+			<li>
+				四月，初雨微凉<br>
+				<span class="author">紫竹笛韵</span>
+			</li>
+			<li>
+				五月，和风微醺<br>
+				<span class="author">紫竹笛韵</span>
+			</li>
+			<li>
+				六月，晴雨流转<br>
+				<span class="author">紫竹笛韵</span>
+			</li>
+			<li>
+				七月，蝉鸣月色<br>
+				<span class="author">紫竹笛韵</span>
+			</li>
+			<li>
+				八月，盛夏未央<br>
+				<span class="author">紫竹笛韵</span>
+			</li>
+			<li>
+				九月，一叶知秋<br>
+				<span class="author">紫竹笛韵</span>
+			</li>
+			<li>
+				十月，霪雨缠绵<br>
+				<span class="author">紫竹笛韵</span>
+			</li>
+			<li>
+				十一月，深秋叙<br>
+				<span class="author">紫竹笛韵</span>
+			</li>
+			<li>
+				十二月，初雪诉<br>
+				<span class="author">紫竹笛韵</span>
+			</li>
+			<li>
+				神龙<br>
+				<span class="author">紫竹笛韵</span>
+			</li>
+		</ul>
+		<div id="musicFooter">
+			<img src="images/1.jpg" alt="" id="musicImg">
+			<marquee id='musicName' behavior="alternate" direction="">纯音乐欣赏</marquee>
+			<span id="Playerbtn" class="btnImgInit"></span>
+		</div>
+	</div>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+	<script src="scripts/musicPlayer.js"></script>
+</body>
+</html>
